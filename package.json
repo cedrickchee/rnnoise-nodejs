@@ -1,6 +1,6 @@
 {
   "name": "rnnoise",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Node.js bindings to Xiph's RNNoise denoising C library",
   "keywords": [
     "audio",
@@ -12,7 +12,7 @@
     "rnn"
   ],
   "main": "lib/index.js",
-  "homepage": "https://github.com/brianc/rnnoise-nodejs",
+  "homepage": "https://github.com/cedrickchee/rnnoise-nodejs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cedrickchee/rnnoise-nodejs.git"
