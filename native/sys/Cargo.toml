@@ -1,0 +1,18 @@
+[package]
+name = "rnnoise-rust"
+description = "Rust bindings for raw C API of Xiph's rnnoise denoising library"
+license = "MIT"
+documentation = "https://docs.rs/rnnoise-rust"
+repository = "https://github.com/cedrickchee/rnnoise-rust"
+version = "0.0.1"
+authors = ["cedrickchee <cedric@invictusbyte.com>"]
+
+include = ["rnnoise/src/**", "rnnoise/include/**",
+	"rnnoise/include/COPYING", "rnnoise/include/AUTHORS",
+	"/src/**", "/build.rs", "/LICENSE",
+	"Cargo.toml"]
+
+[build-dependencies]
+cc = "1.0"
+bindgen = { version = "0.52", default-features = false, features = ["runtime"] }
+proc-macro2 = { version = "1.0", default-features = false }
