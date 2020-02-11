@@ -15,3 +15,6 @@ neon-build = "0.3.3"
 
 [dependencies]
 neon = "0.3.3"
+rnnoise-rust = { path = "sys" }
+audrey = "0.2"
+hound = "3.4"
