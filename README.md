@@ -1,5 +1,7 @@
 # rnnoise-nodejs
 
+[![Build Status](https://travis-ci.org/cedrickchee/rnnoise-nodejs.svg?branch=master)](https://travis-ci.org/cedrickchee/rnnoise-nodejs)
+
 Node.js bindings to Xiph's [RNNoise denoising C library](https://github.com/xiph/rnnoise/).
 
 [RNNoise](https://people.xiph.org/~jm/demo/rnnoise/) is a project showing how deep learning (Recurrent Neural Networks/RNNs) can be applied to noise suppression.
