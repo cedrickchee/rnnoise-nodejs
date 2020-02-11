@@ -1,6 +1,6 @@
 # rnnoise-nodejs
 
-[![Build Status](https://travis-ci.org/cedrickchee/rnnoise-nodejs.svg?branch=master)](https://travis-ci.org/cedrickchee/rnnoise-nodejs)
+[![Build Status](https://travis-ci.com/cedrickchee/rnnoise-nodejs.svg?branch=master)](https://travis-ci.com/cedrickchee/rnnoise-nodejs)
 
 Node.js bindings to Xiph's [RNNoise denoising C library](https://github.com/xiph/rnnoise/).
 
