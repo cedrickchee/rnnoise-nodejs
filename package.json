@@ -30,7 +30,7 @@
     "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
     "build": "neon build",
     "build-release": "neon build --release",
-    "version": "npm build-release"
+    "version": "npm run build-release"
   },
   "files": [
     "lib/",
