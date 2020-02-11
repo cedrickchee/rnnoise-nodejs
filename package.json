@@ -1,18 +1,36 @@
 {
   "name": "rnnoise-nodejs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Node.js bindings to Xiph's RNNoise denoising C library",
+  "keywords": [
+    "audio",
+    "noise-suppression",
+    "rnnoise",
+    "pcm",
+    "api",
+    "deeplearning",
+    "rnn"
+  ],
   "main": "lib/index.js",
+  "homepage": "https://github.com/brianc/rnnoise-nodejs",
   "repository": {
     "type": "git",
     "url": "https://github.com/cedrickchee/rnnoise-nodejs"
   },
-  "author": "cedrickchee <cedric@invictusbyte.com>",
+  "author": "Cedric Chee <cedric@invictusbyte.com>",
   "license": "MIT",
   "dependencies": {
     "neon-cli": "^0.3.3"
   },
   "scripts": {
     "install": "neon build"
+  },
+  "files": [
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">= 8.11.3"
   }
 }
