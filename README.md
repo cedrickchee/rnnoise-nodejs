@@ -6,9 +6,7 @@ Node.js bindings to Xiph's [RNNoise denoising C library](https://github.com/xiph
 
 ## Install
 
-```sh
-$ npm install rnnoise
-```
+[![NPM](https://nodei.co/npm/rnnoise.png?compact=true)](https://nodei.co/npm/rnnoise/)
 
 ## Use
 
