@@ -36,6 +36,16 @@ console.log(`Denoised buffer length: ${denoisedBufLength} bytes`);
 - `input` is a required string of the path to RAW PCM file input.
 - `output` is a required string of the path to output RAW PCM file.
 
+## Developer
+
+**Working on project with [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)**
+
+We keep a [rnnoise Git repo](https://github.com/xiph/rnnoise/) as a subdirectory in this Git repo. So, please clone this repo by using Git submodule:
+
+```
+git clone --recursive https://github.com/cedrickchee/rnnoise-nodejs.git
+```
+
 ---
 
 <details>
