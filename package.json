@@ -15,22 +15,38 @@
   "homepage": "https://github.com/brianc/rnnoise-nodejs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cedrickchee/rnnoise-nodejs"
+    "url": "git+https://github.com/cedrickchee/rnnoise-nodejs.git"
   },
   "author": "Cedric Chee <cedric@invictusbyte.com>",
   "license": "MIT",
   "dependencies": {
-    "neon-cli": "^0.3.3"
+    "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
+    "neon-cli": "^0.3.3",
+    "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
-    "install": "neon build"
+    "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
+    "package": "node-pre-gyp package",
+    "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
+    "build": "neon build",
+    "build-release": "neon build --release",
+    "version": "npm build-release"
   },
   "files": [
     "lib/",
+    "native/index.node",
     "README.md",
     "LICENSE"
   ],
   "engines": {
     "node": ">= 8.11.3"
+  },
+  "binary": {
+    "module_name": "index",
+    "host": "https://github.com/cedrickchee/rnnoise-nodejs/releases/download/",
+    "remote_path": "{version}",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "module_path": "./native",
+    "pkg_path": "."
   }
 }
