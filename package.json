@@ -1,5 +1,5 @@
 {
-  "name": "rnnoise-nodejs",
+  "name": "rnnoise",
   "version": "0.1.0",
   "description": "Node.js bindings to Xiph's RNNoise denoising C library",
   "keywords": [
