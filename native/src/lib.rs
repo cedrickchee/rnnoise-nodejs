@@ -1,12 +1,14 @@
-#[macro_use]
+// #[macro_use]
 extern crate neon;
-
 use neon::prelude::*;
 
-fn hello(mut cx: FunctionContext) -> JsResult<JsString> {
-    Ok(cx.string("hello node"))
-}
+extern crate audrey;
+extern crate hound;
+extern crate rnnoise_rust;
+
+mod denoise;
+mod rnnoise;
 
 register_module!(mut cx, {
-    cx.export_function("hello", hello)
+    cx.export_function("suppress", denoise::suppress)
 });
