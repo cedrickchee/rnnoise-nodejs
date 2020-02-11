@@ -1,6 +1,6 @@
 {
   "name": "rnnoise",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Node.js bindings to Xiph's RNNoise denoising C library",
   "keywords": [
     "audio",
@@ -12,7 +12,7 @@
     "rnn"
   ],
   "main": "lib/index.js",
-  "homepage": "https://github.com/cedrickchee/rnnoise-nodejs",
+  "homepage": "https://github.com/cedrickchee/rnnoise-nodejs#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cedrickchee/rnnoise-nodejs.git"
@@ -34,7 +34,7 @@
   },
   "files": [
     "lib/",
-    "native/index.node",
+    "native/.keep",
     "README.md",
     "LICENSE"
   ],
@@ -46,7 +46,7 @@
     "host": "https://github.com/cedrickchee/rnnoise-nodejs/releases/download/",
     "remote_path": "{version}",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
-    "module_path": "./native",
+    "module_path": "./native/",
     "pkg_path": "."
   }
 }
