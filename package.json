@@ -1,6 +1,6 @@
 {
   "name": "rnnoise",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "description": "Node.js bindings to Xiph's RNNoise denoising C library",
   "keywords": [
     "audio",
@@ -20,24 +20,18 @@
   "author": "Cedric Chee <cedric@invictusbyte.com>",
   "license": "MIT",
   "dependencies": {
-    "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
     "neon-cli": "^0.3.3",
+    "node-pre-gyp": "^0.14.0",
     "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
+    "install": "node-pre-gyp install --update-binary --fallback-to-build=false || neon build --release",
     "package": "node-pre-gyp package",
     "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
     "build": "neon build",
     "build-release": "neon build --release",
     "version": "npm run build-release"
   },
-  "files": [
-    "lib/",
-    "native/.keep",
-    "README.md",
-    "LICENSE"
-  ],
   "engines": {
     "node": ">= 8.11.3"
   },
@@ -46,7 +40,6 @@
     "host": "https://github.com/cedrickchee/rnnoise-nodejs/releases/download/",
     "remote_path": "{version}",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
-    "module_path": "./native/",
-    "pkg_path": "."
+    "module_path": "./native/"
   }
 }

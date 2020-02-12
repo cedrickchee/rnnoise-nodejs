@@ -1,0 +1,4 @@
+# Whitelist a single index.node file in a directory
+# Source: https://stackoverflow.com/q/30976685/206570
+*
+!index.node
