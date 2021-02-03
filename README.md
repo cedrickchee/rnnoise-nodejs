@@ -17,6 +17,15 @@ Jan 2021:
 >
 > This is the 2020 state-of-the art noise suppression for **real-time** and offline use-cases. It works best in real-world environment where the background noise is low to medium. Of course it is not working well in super noisy environment like construction site. The model is suitable for many work-from-home environments such as home or cafe. We're currently working to bring this technology to desktop app for Mac OSX and Ubuntu (linux). Programming language SDK for Node.js and Go is also in the work. REST API is available (upon request) for integration with other use-cases.
 
+Feb 2021:
+
+> The new project has 3 components:
+> 1. PyTorch deep learning model
+> 2. Node.js bindings for the PyTorch traced (JIT) model in C++
+> 3. [JavaScript port of PyTorch C++ library (libtorch)](https://github.com/cedrickchee/tch-js)
+>
+> Development of component 1 and 3 is completed.
+
 ## Install
 
 Node.js versions supported: 8, 10
