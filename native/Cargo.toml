@@ -14,7 +14,7 @@ crate-type = ["cdylib"]
 neon-build = "0.3.3"
 
 [dependencies]
-neon = "0.3.3"
+neon = "0.10.1"
 rnnoise-rust = { path = "sys" }
 audrey = "0.2"
 hound = "3.4"
